@@ -6,8 +6,6 @@ module ADD_32(
     output wire         C        //输出进位
 );
 
-
-
 // level1
 wire [31:0] p1 = Input1|Input2;
 wire [31:0] g1 = Input1&Input2;

@@ -2,7 +2,7 @@
 module multiplier_tb;
     reg [15:0]  InputX     ;
     reg [15:0]  InputY     ;
-    wire [31:0] product,p_ref  ;
+    wire [31:0] product    ;
 
     initial
     begin
@@ -36,11 +36,4 @@ module multiplier_tb;
         .InputY  (InputY),
         .product (product)
     );
-
-    multiplier_ref u_multiplier_ref(
-        .InputX (InputX ),
-        .InputY (InputY ),
-        .p_ref  (p_ref )
-    );
-
 endmodule
