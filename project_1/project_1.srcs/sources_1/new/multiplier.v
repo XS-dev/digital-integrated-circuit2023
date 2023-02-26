@@ -1,7 +1,7 @@
 module multiplier (
     input wire [15:0]  InputX         ,//输入数据，二进制补码
     input wire [15:0]  InputY         ,//输入数据，二进制补码
-    output wire [31:0] product    //输出乘积a * b，二进制补码
+    output wire [31:0] product    //输出乘积，二进制补码
 );
 
 // 8个booth两位乘，得到8个16位部分积，并将16个部分积扩展到32位
