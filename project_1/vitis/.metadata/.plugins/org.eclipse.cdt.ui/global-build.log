@@ -1,0 +1,36 @@
+Nothing to build in platform 'test1'
+
+11:59:40 **** Build of configuration Debug for project yest1 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IL:/FPGA/ICIG/project_1/vitis/test1/export/test1/sw/test1/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IL:/FPGA/ICIG/project_1/vitis/test1/export/test1/sw/test1/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: yest1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LL:/FPGA/ICIG/project_1/vitis/test1/export/test1/sw/test1/standalone_domain/bsplib/lib -o "yest1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: yest1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size yest1.elf  |tee "yest1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19064	   1144	  22568	  42776	   a718	yest1.elf
+'Finished building: yest1.elf.size'
+' '
+11:59:49 **** Build of configuration Debug for project yest1_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 2209 L:/FPGA/ICIG/project_1/vitis/test1/export/test1/test1.xpfm standalone_domain L:/FPGA/ICIG/project_1/vitis/yest1_system/Debug/system.bif
+sdcard_gen --xpfm L:/FPGA/ICIG/project_1/vitis/test1/export/test1/test1.xpfm --sys_config test1 --bif L:/FPGA/ICIG/project_1/vitis/yest1_system/Debug/system.bif --bitstream L:/FPGA/ICIG/project_1/vitis/yest1/_ide/bitstream/design_1_wrapper.bit --elf L:/FPGA/ICIG/project_1/vitis/yest1/Debug/yest1.elf,ps7_cortexa9_0
+creating BOOT.BIN using L:/FPGA/ICIG/project_1/vitis/yest1/_ide/bitstream/design_1_wrapper.bit
+Running D:/Xilinx/Vitis/2021.2/bin/bootgen  -image L:/FPGA/ICIG/project_1/vitis/yest1_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

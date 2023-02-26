@@ -1,0 +1,30 @@
+{
+    "Report Information": {
+        "Copyright": "Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.",
+        "Tool Version": "Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021",
+        "Date": "Sat Feb 25 19:19:48 2023",
+        "Host": "XS-WIN running 64-bit major release  (build 9200)",
+        "Command": "report_design_analysis -qor_summary -disable_device_warning -json l:/FPGA/ICIG/project_1/project_1.runs/impl_1/.Xil/Vivado-2064-XS-WIN/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/.Xil/Vivado-11584-XS-WIN/dcp0/dbg_hub_rda.json",
+        "Design": "dbg_hub",
+        "Device": "xc7z010",
+        "Design State": "Synthesized"
+    },
+    "Design QoR Summary": [{
+            "Task Name": "synth_design",
+            "Options": "",
+            "Directives": "",
+            "Runtime(mins)": "0",
+            "Wns(ns)": "",
+            "Tns(ns)": "",
+            "Whs(ns)": "",
+            "Ths(ns)": "",
+            "RQA": "",
+            "Global Cong Level N-E-S-W": "",
+            "Global Cong Tile% N-E-S-W": "",
+            "Long Cong Level N-E-S-W": "",
+            "Long Cong Tile% N-E-S-W": "",
+            "Short Cong Level N-E-S-W": "",
+            "Short Cong Tile% N-E-S-W": "",
+            "Number of threads": "2"
+        }]
+}

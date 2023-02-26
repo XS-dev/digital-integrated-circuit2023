@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sat Feb 25 16:19:12 2023
+# Process ID: 1460
+# Current directory: L:/FPGA/ICIG/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16224 L:\FPGA\ICIG\project_1\project_1.xpr
+# Log file: L:/FPGA/ICIG/project_1/vivado.log
+# Journal file: L:/FPGA/ICIG/project_1\vivado.jou
+# Running On: XS-WIN, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 14888 MB
+#-----------------------------------------------------------
+start_gui
+open_project L:/FPGA/ICIG/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open L:/FPGA/ICIG/project_1/project_1.srcs/sources_1/new/asd.v w ]
+add_files L:/FPGA/ICIG/project_1/project_1.srcs/sources_1/new/asd.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files L:/FPGA/ICIG/project_1/project_1.srcs/sources_1/new/asd.v] -no_script -reset -force -quiet
+remove_files  L:/FPGA/ICIG/project_1/project_1.srcs/sources_1/new/asd.v
+file delete -force L:/FPGA/ICIG/project_1/project_1.srcs/sources_1/new/asd.v
+launch_simulation
+launch_simulation
+launch_simulation
+source multiplier_tb.tcl
+relaunch_sim
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+launch_simulation
+source multiplier_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
